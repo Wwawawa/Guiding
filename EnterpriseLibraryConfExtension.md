@@ -1,3 +1,6 @@
+Enterprise library 6 work with visual studio 2013 and or 2015
+========
+
 It does. You may add Enterprise Library 6 into your project via [Nuget](https://www.nuget.org/packages/EnterpriseLibrary.Logging/) 
 Here is the sample application.
 
