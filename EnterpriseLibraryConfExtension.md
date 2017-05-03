@@ -11,10 +11,10 @@ download Microsoft.Practices.EnterpriseLibrary.ConfigConsoleV6.vsix from the [li
 
 A VSIX file is a zip file that uses the Open Packaging Convention. You can rename the .VSIX extension to .ZIP and use any zip browser (including the Windows File Explorer) to browse its contents.
       
-      extract the file into a folder
-      locate the file called extension.vsixmanifest in the folder
-      open the file with notepad.exe
-      locate
+extract the file into a folder
+locate the file called extension.vsixmanifest in the folder
+open the file with notepad.exe
+locate
       
  ```sh     
   <SupportedProducts>
