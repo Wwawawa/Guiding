@@ -3,7 +3,7 @@ Here is the sample application.
 
 You may find more details in [Logging Application Block](http://msdn.microsoft.com/en-us/library/dn440731(v=pandp.60).aspx)
 
-To use [Enterprise Library Configuration Console Extension](http://msdn.microsoft.com/en-us/library/dn440731(v=pandp.60).aspx)
+To use [Enterprise Library Configuration Console Extension](http://www.microsoft.com/en-us/download/confirmation.aspx?id=38789)
 
 To install the extension into the Visual Studio 2013 you may follow the workaround steps below.
 
