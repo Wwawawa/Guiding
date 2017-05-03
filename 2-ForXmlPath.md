@@ -1,4 +1,5 @@
-使用自连接、for xml path('')和stuff合并显示多行数据到一行中	
+使用自连接、for xml path('')和stuff合并显示多行数据到一行中
+```sh
 3. --注  	
 4. --1、计算列可以不用包含在聚合函数中而直接显示，如下面语句的val。  	
 5. --2、for xml path('') 应该应用于语句的最后面，继而生成xml。  	
@@ -72,3 +73,4 @@ SELECT STUFF((SELECT ',' + y
 	
  GO	
  DROP TABLE dbo.x;	
+```
