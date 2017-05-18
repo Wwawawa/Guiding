@@ -13,10 +13,8 @@
 ```
 * 6-- [CSS](https://github.com/Wwawawa/Guiding/blob/master/4-CSS.md)
 * 7-- Useful site:
-```sh
-[Plunker](https://plnkr.co/)
-[identityserver](https://identityserver.github.io/)
-[slideshare](https://www.slideshare.net/)
-[Mosh Sharing](https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA)
-[Kudvenkat Sharing](https://www.youtube.com/user/kudvenkat/featured)
-```
+** [Plunker](https://plnkr.co/)
+** [identityserver](https://identityserver.github.io/)
+** [slideshare](https://www.slideshare.net/)
+** [Mosh Sharing](https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA)
+
