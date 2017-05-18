@@ -7,4 +7,4 @@
 #### 7--[Hiding and Showing Content with ngIf](https://plnkr.co/edit/LXnlULhj6nBPO7yifo7A)
 #### 8--[Hiding Content with the [Hidden] Binding](https://plnkr.co/edit/4Ui7kEHOp3fPLkcYaG6B)
 #### 9--[Hiding and Showing Content with ngSwitch](https://plnkr.co/edit/Vilb8799fzOC7pVsA5pR)
-#### 10--[]
+#### 10--[Adding Style with ngClass](https://plnkr.co/edit/8jCI9tJjcnE013mmsHi4)
