@@ -11,3 +11,5 @@
 * 9--[Hiding and Showing Content with ngSwitch](https://plnkr.co/edit/Vilb8799fzOC7pVsA5pR)
 * 10--[Adding Style with ngClass](https://plnkr.co/edit/8jCI9tJjcnE013mmsHi4)
 * 11--[Adding Style with ngStyle](https://plnkr.co/edit/6DWm5DAlIKXLjxY2HwhN?p=info)
+#### Creating Reusable Services
+* [Creating a Service And Inject Third Library](https://plnkr.co/edit/3cGfzHAKmt6DYZtJl8DK)
