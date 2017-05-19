@@ -13,3 +13,12 @@
 * 11--[Adding Style with ngStyle](https://plnkr.co/edit/6DWm5DAlIKXLjxY2HwhN?p=info)
 #### Creating Reusable Services
 * [Creating a Service And Inject Third Library](https://plnkr.co/edit/3cGfzHAKmt6DYZtJl8DK)
+#### Routing and Navigating Pages
+* [Creating a Route and avoid conflict when the similar router appearing](http://plnkr.co/edit/uxm1kj8A8DIXQQg4VPQf)
+* [Accessing Route Parameters](http://plnkr.co/edit/7MJZc2FuP4wlzo88098n)
+* [Linking to Routes](http://plnkr.co/edit/kGFJkbKPElB2tjBddyJh)
+* [Navigating from Code](http://plnkr.co/edit/o40fPMINvax9bORdvy6H)
+* [Guarding Against Route Activation](http://plnkr.co/edit/Ckuj11eAQUQQiG88Vz02)
+* [Guarding Against Route De-Activation](http://plnkr.co/edit/Jl1BTwuClfbAydwgJqbp)
+* [Pre-Loading Data for Components](http://plnkr.co/edit/42W34uedJsxSnO4GfuCR)
+* [Styling Active Links](http://plnkr.co/edit/yF5qkZWdPp6WzlArxtfX)
