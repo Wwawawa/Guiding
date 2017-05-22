@@ -22,3 +22,6 @@
 * [Guarding Against Route De-Activation](http://plnkr.co/edit/Jl1BTwuClfbAydwgJqbp)
 * [Pre-Loading Data for Components](http://plnkr.co/edit/42W34uedJsxSnO4GfuCR)
 * [Styling Active Links](http://plnkr.co/edit/yF5qkZWdPp6WzlArxtfX)
+* [Multiple module - Lazily Loading Feature Modules](https://plnkr.co/edit/MkLLiAJWkHYjjJ58SYA8)
+* [Barrels - Organizing Your Exports](https://plnkr.co/edit/C0aY1Hlqb5JwqCIhFAho)
+#### Collecting Data with Forms and Validation
