@@ -25,3 +25,9 @@
 * [Multiple module - Lazily Loading Feature Modules](https://plnkr.co/edit/MkLLiAJWkHYjjJ58SYA8)
 * [Barrels - Organizing Your Exports](https://plnkr.co/edit/C0aY1Hlqb5JwqCIhFAho)
 #### Collecting Data with Forms and Validation
+* [Using Models for Type Safety - interface not known in plunker](http://plnkr.co/edit/vDWIzoZrYW6JrU1q1IAa)
+* [Creating a Template-based Form](http://plnkr.co/edit/oIVnAkszqOGwDyYTm7WF)
+* [Validating a Template-based Form](http://plnkr.co/edit/1VqzHIqrHY4QY1QL3Uko)
+* [Creating a Reactive Form ](http://plnkr.co/edit/LFob432TyAjwdEoc4Qo7)
+* [Validating a Reactive Form And Multiple Validating](http://plnkr.co/edit/SUUG6w0QUJqU3cGtFrd0)
+* [Adding a Custom Validator](http://plnkr.co/edit/FeYhmKgjR7nFoR0Op5xa)
