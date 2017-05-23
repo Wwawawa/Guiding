@@ -31,3 +31,6 @@
 * [Creating a Reactive Form ](http://plnkr.co/edit/LFob432TyAjwdEoc4Qo7)
 * [Validating a Reactive Form And Multiple Validating](http://plnkr.co/edit/SUUG6w0QUJqU3cGtFrd0)
 * [Adding a Custom Validator](http://plnkr.co/edit/FeYhmKgjR7nFoR0Op5xa)
+#### Reusing Components with Content Projection
+* [Using Content Projection](http://plnkr.co/edit/Zwe0OOwAQdXvHFn6k2jO)
+* [Multiple Slot Content Projection](http://plnkr.co/edit/ski3P20beoPdlO2ZwQ0C)
