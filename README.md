@@ -2,22 +2,28 @@
 #### 1-- [Enterprise Library Configuration Console Extension](https://github.com/Wwawawa/Guiding/blob/master/1-EnterpriseLibraryConfExtension.md)
 #### 2-- [SSIS DTEXEC](https://github.com/Wwawawa/Guiding/blob/master/2-SSIS-DTEXEC.md)
 #### 3-- [for xml path('')](https://github.com/Wwawawa/Guiding/blob/master/3-ForXmlPath.md)
-#### 4-- Cross origin
+#### 4-- [CSS](https://github.com/Wwawawa/Guiding/blob/master/4-CSS.md)
+#### Cross origin
 ```sh
   jsonp
   CORS
 ```
-#### 5-- Authentication inherit
+#### Authentication inherit
 ```sh
   <location path="." inheritInChildApplications="true">
 ```
-#### 6-- [CSS](https://github.com/Wwawawa/Guiding/blob/master/4-CSS.md)
-#### 7-- Useful site:
+
+#### Useful site:
 * [Plunker](https://plnkr.co/)
 * [identityserver](https://identityserver.github.io/)
 * [slideshare](https://www.slideshare.net/)
-#### 7-- Sharing Course:
+#### Sharing Course:
 * [Mosh Sharing](https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA)
 * [Kudvenkat Sharing](https://www.youtube.com/user/kudvenkat/featured)
 * [Joudeh Sharing](http://bitoftech.net/archive/)
+#### Get Max Id Lamada:
+```sh
+let newArray=[{id: 1},{id: 2}];
+const maxId=Math.max.apply(null, this.newArray.map(s=>s.id));
+```
 
