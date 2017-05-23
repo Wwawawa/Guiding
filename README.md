@@ -23,7 +23,7 @@
 * [Joudeh Sharing](http://bitoftech.net/archive/)
 #### Get Max Id Lamada:
 ```sh
-let newArray=[{id: 1},{id: 2}];
-const maxId=Math.max.apply(null, this.newArray.map(s=>s.id));
+  let newArray=[{id: 1},{id: 2}];
+  const maxId=Math.max.apply(null, this.newArray.map(s=>s.id));
 ```
 
