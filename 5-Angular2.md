@@ -34,3 +34,10 @@
 #### Reusing Components with Content Projection
 * [Using Content Projection](http://plnkr.co/edit/Zwe0OOwAQdXvHFn6k2jO)
 * [Multiple Slot Content Projection](http://plnkr.co/edit/ski3P20beoPdlO2ZwQ0C)
+#### Manipulating Data With Pipes
+* [Using the Lower Case Pipe](http://plnkr.co/edit/pkKZAyBSD4VZoabcCo8G)
+* [Using the Date Pipe](http://plnkr.co/edit/5tJ636Obmt77bro2b7WW)
+* [Creating Custom Pipes](http://plnkr.co/edit/S7guOz5qx5xbzJHd3iHb)
+* [Use the ngOnChanges lifecycle hook](http://plnkr.co/edit/EDPFB6N8k0XQRFMM448w)
+* [Filter a list of movies by their rating](http://plnkr.co/edit/QVA3vMEgSQJ8XoUR7ElK)
+* [Sort a list of movies by their rating](http://plnkr.co/edit/W8MhzGXjrphkra0DCOCg)
