@@ -41,3 +41,6 @@
 * [Use the ngOnChanges lifecycle hook](http://plnkr.co/edit/EDPFB6N8k0XQRFMM448w)
 * [Filter a list of movies by their rating](http://plnkr.co/edit/QVA3vMEgSQJ8XoUR7ElK)
 * [Sort a list of movies by their rating](http://plnkr.co/edit/W8MhzGXjrphkra0DCOCg)
+#### Understanding Dependency Injection
+* [Use Opaque Token & @Inject ](http://plnkr.co/edit/pMDVwbUkjVR7qUUcvlp8)
+* [Use the useExisting Provider](http://plnkr.co/edit/PTojTPcFreI5IX27Edyv)
