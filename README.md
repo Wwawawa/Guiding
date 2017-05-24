@@ -27,7 +27,7 @@
   const maxId=Math.max.apply(null, this.newArray.map(s=>s.id));
 ```
 #### How to simulate a abversable and asynchrony
-```sh
+```js
   searchSessions(searchTerm:string){
           var term=searchTerm.toLocaleLowerCase();
           var results=[]
