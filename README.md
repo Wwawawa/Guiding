@@ -17,7 +17,10 @@
 * [Plunker](https://plnkr.co/)
 * [identityserver](https://identityserver.github.io/)
 * [slideshare](https://www.slideshare.net/)
-* [unpkg](https://unpkg.com/#/)
+* [unpkg for](https://unpkg.com/#/) --unpkg is a fast, global content delivery network for everything on npm. Use it to quickly and easily load files using a simple URL like
+```sh
+    https://unpkg.com/package@version/file
+```
 #### Sharing Course:
 * [Mosh Sharing](https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA)
 * [Kudvenkat Sharing](https://www.youtube.com/user/kudvenkat/featured)
