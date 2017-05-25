@@ -12,7 +12,7 @@
 ### Block
 #### module
 
-* muiltiple module, now only learning about relation with each other by router, reference [Multiple module - Lazily Loading Feature Modules](https://plnkr.co/edit/MkLLiAJWkHYjjJ58SYA8)
+* muiltiple module, now only learning about relation with each other by router, child module not need to bootstrap in main.ts, it can be registered in router of parent module. reference [Multiple module - Lazily Loading Feature Modules](https://plnkr.co/edit/MkLLiAJWkHYjjJ58SYA8) 
 
 #### Component
 * comunicating with each other
