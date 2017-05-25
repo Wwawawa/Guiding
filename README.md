@@ -17,7 +17,7 @@
 * [Plunker](https://plnkr.co/)
 * [identityserver](https://identityserver.github.io/)
 * [slideshare](https://www.slideshare.net/)
-* [unpkg](https://unpkg.com/#/) --unpkg is a fast, global content delivery network for everything on npm. Use it to quickly and easily load files using a simple URL like
+* [unpkg](https://unpkg.com/#/) --unpkg is a fast, global [content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network) for everything on [npm](https://www.npmjs.com/). Use it to quickly and easily load files using a simple URL like
 ```sh
     https://unpkg.com/package@version/file
 ```
