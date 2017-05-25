@@ -36,5 +36,5 @@
 * filter
 * sort
 * format
-#### DI
+#### DI(dependence injection)
 
