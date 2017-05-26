@@ -22,6 +22,8 @@
 ```
 * can add style
 * component reusing(ng-content)
+* customize the component template ID
+* Get a component template method: @ViewChild/@ViewChildren/@ContentChild/@ContentChildren 
 #### Service
 
 #### Router
