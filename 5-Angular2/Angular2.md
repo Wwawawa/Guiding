@@ -44,3 +44,8 @@
 #### Understanding Dependency Injection
 * [Use Opaque Token & @Inject (shorthand use the third-party's all methods and avoiding the conflict of the named)](http://plnkr.co/edit/pMDVwbUkjVR7qUUcvlp8)
 * [Use the useExisting Provider(shorthand using the existing service to a new service which has not built-in)](http://plnkr.co/edit/PTojTPcFreI5IX27Edyv)
+#### Creating Directives and Advanced Components
+* [Creating a Directive](http://plnkr.co/edit/tEDReQReECfkysJCD0fC)
+* [Wrapping the jQuery And  Add Modal And Collapsable And Directive And customize the id for a component template(.ex Modal)](http://plnkr.co/edit/F54Q88J571Abck92fE35)
+* [resolving issues about component not be loaded if change router parameters And Hide the modal](http://plnkr.co/edit/2mSJYTmnHecz0h5HUau5)
+* [Using the @ViewChild Decorator to hide the mode](http://plnkr.co/edit/b1L5jEuMsNHOYf0LB6Al)
