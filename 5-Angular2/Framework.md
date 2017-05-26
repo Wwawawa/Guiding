@@ -16,16 +16,15 @@
 
 #### Component
 * comunicating with each other
-```js
-  @input() //with child component
-  @Output() //with parent component
-```
-** @input() can use function like below, details refer to [upvote style changing](https://github.com/Wwawawa/angular2-fundamentals-Completing/blob/master/ng2-fundamentals/app/events/event-detail/upvote.component.ts)
-```js
-    @Input() set voted(val){
-      this.iconColor = val ? 'red' : 'white'
-    }
-```
+  * @input() //with child component
+    * @input() can use function like below, details refer to [upvote style changing](https://github.com/Wwawawa/angular2-fundamentals-Completing/blob/master/ng2-fundamentals/app/events/event-detail/upvote.component.ts)
+      ```js
+          @Input() set voted(val){
+            this.iconColor = val ? 'red' : 'white'
+          }
+      ```
+  * @Output() //with parent component
+
 * can add style
 * component reusing(ng-content)
 * customize the component template ID
