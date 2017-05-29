@@ -49,3 +49,8 @@
 * [Wrapping the jQuery And  Add Modal And Collapsable And Directive And customize the id for a component template(.ex Modal)](http://plnkr.co/edit/F54Q88J571Abck92fE35)
 * [resolving issues about component not be loaded if change router parameters And Hide the modal](http://plnkr.co/edit/2mSJYTmnHecz0h5HUau5)
 * [Using the @ViewChild Decorator to hide the mode](http://plnkr.co/edit/b1L5jEuMsNHOYf0LB6Al)
+#### Customer validators
+* [Customer a validator](http://plnkr.co/edit/A3hJUkP88mDZRDxF3ajQ)
+  * Add the validator into NG_VALIDATORS list which include all the validators in angular(NOTICE：add the multi property avoiding the override the NG_VALIDATORS) 
+  * FormGroup.Root which is used to get the parent node of current node
+  * "#locationGroup="ngModelGroup"": add locationGroup attribute into the specifical html
