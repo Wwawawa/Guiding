@@ -22,6 +22,8 @@
 ```sh
     https://unpkg.com/package@version/file
 ```
+* [Star Wars data](http://swapi.co/)
+  All the Star Wars data you've ever wanted:Planets, Spaceships, Vehicles, People, Films and Species from all SEVEN Star Wars films.
 #### Sharing Course:
 * [Mosh Sharing](https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA)
 * [Kudvenkat Sharing](https://www.youtube.com/user/kudvenkat/featured)
