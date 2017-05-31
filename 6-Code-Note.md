@@ -1,3 +1,12 @@
+#### Cross origin
+```sh
+  jsonp
+  CORS
+```
+#### Authentication inherit
+```sh
+  <location path="." inheritInChildApplications="true">
+```
 #### Get Max Id Lamada:
 ```js
   let newArray=[{id: 1},{id: 2}];
