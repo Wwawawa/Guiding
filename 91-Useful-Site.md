@@ -5,3 +5,13 @@
 ```sh
     https://unpkg.com/package@version/file
 ```
+* [nconf](https://github.com/indexzero/nconf):Hierarchical node.js configuration with files, environment variables, command-line arguments, and atomic object merging, this is from [indexzero](https://github.com/indexzero) which has other more small package
+* [toastr](https://github.com/CodeSeven/toastr): Simple javascript toast notifications [toastrjs](http://www.toastrjs.com), this is from * [CodeSeven](https://github.com/CodeSeven) which is include another program [KoLite](https://github.com/CodeSeven/KoLite)
+* [JetBrains](https://github.com/JetBrains/ExternalAnnotations): JetBrains ReSharper External Annotations
+* socketio
+    * [socketio](https://github.com/socketio)
+    * [socket.io](https://github.com/socketio/socket.io): Realtime application framework (Node.JS server) http://socket.io
+    * [socket.io-redis](https://github.com/socketio/socket.io-redis): Adapter to enable broadcasting of events to multiple separate socket.io server nodes.
+
+
+
