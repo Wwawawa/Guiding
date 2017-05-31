@@ -1,0 +1,5 @@
+* [selenium](https://github.com/SeleniumHQ/selenium)  [selenium document](http://www.seleniumhq.org/)
+* Xunit -- UT third party.(Nuget:'xunit.assert/xunit.extensibility.core/xunit.extensibility.execution/xunit.abstractions or xunit(sometime maybe not available)' and 'xunit.runner.visualstudio')
+* Autofac -- Dependence injection which you can resolve the relationship between all dependence in a container file, uncoupling every dependence libraries.(Nuget: Autofac)
+* Moq -- Mock dependence of the under test code in the UT.(Nuget:Moq)
+* Prism -- publication and subscription to events.(Nuget: Prism.core)
