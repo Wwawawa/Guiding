@@ -15,3 +15,9 @@
 #### 3--Why my observable data from http.get() not be render to page, as well as with a error "uncaught(In promise)..."? ex. "{{movie?.title}}" in the [Demo](http://plnkr.co/edit/hJ40JWN6nJpSvr8Ph0y9)
     A: Because this is asynchronous. we need to add "?" behind the property in the html when call this property in double braces in order to support delay rendering.
 #### 4--When get data from third resouse url in http, notice the '/' whether to exist or not in the end of url, if set '/' uncorrectly, maybe caurse the cross origin error. ex. "/" in the end of http://swapi.co/api/films/1/  in the [Demo](http://plnkr.co/edit/hJ40JWN6nJpSvr8Ph0y9)
+#### 5--Resolve service need to transform the router parameters when need the router parameters, ex. 
+```js
+    resolve(router:ActivatedRouteSnapshot){
+        return this.eventService.getEvent(router.params['id']);
+    }
+```
