@@ -47,18 +47,18 @@
 #### Creating Directives and Advanced Components
 * [Creating a Directive](http://plnkr.co/edit/tEDReQReECfkysJCD0fC)
 * [Navigation Search](http://plnkr.co/edit/F54Q88J571Abck92fE35)
- * Wrapping the jQuery And  Add Modal 
- * Collapsable 
- * Directive 
- * customize the id for a component template(.ex Modal)
- * simulate the returning observable
-  ```js
-        var emitter=new EventEmitter(true);
-        setTimeout(function() {
-          emitter.emit(results);
-        }, 100);
-        return emitter;
-  ```
+   * Wrapping the jQuery And  Add Modal 
+   * Collapsable 
+   * Directive 
+   * customize the id for a component template(.ex Modal)
+   * simulate the returning observable
+    ```js
+          var emitter=new EventEmitter(true);
+          setTimeout(function() {
+            emitter.emit(results);
+          }, 100);
+          return emitter;
+    ```
 * [resolving issues about component not be loaded if change router parameters And Hide the modal](http://plnkr.co/edit/2mSJYTmnHecz0h5HUau5)
 * [Using the @ViewChild Decorator to hide the mode](http://plnkr.co/edit/b1L5jEuMsNHOYf0LB6Al)
 #### Customer validators
