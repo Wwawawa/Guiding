@@ -66,3 +66,5 @@
   * Add the validator into NG_VALIDATORS list which include all the validators in angular(NOTICE：add the multi property avoiding the override the NG_VALIDATORS) 
   * FormGroup.Root which is used to get the parent node of current node
   * "#locationGroup="ngModelGroup"": add locationGroup attribute into the specifical html
+#### Communicating with the Server using HTTP, Observables, and Rx
+* []()
