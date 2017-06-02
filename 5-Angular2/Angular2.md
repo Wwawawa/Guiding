@@ -67,4 +67,9 @@
   * FormGroup.Root which is used to get the parent node of current node
   * "#locationGroup="ngModelGroup"": add locationGroup attribute into the specifical html
 #### Communicating with the Server using HTTP, Observables, and Rx
-* []()
+* [Massaging Requested Data with Map](http://plnkr.co/edit/ODS0GhIb2Rb5OdXaegLo)
+* [Making an HTTP Request](http://plnkr.co/edit/hJ40JWN6nJpSvr8Ph0y9)
+  * using '?' to call asynchronous data in html 
+  * notice the '/' when call third-party data url
+* [refresh data from resolve service when call again](http://plnkr.co/edit/krHtnnzSZunZEZpIPZH9)
+* [Http using Querystring Parameters](http://plnkr.co/edit/UkKTiWo6MHKbAaSlAIoq)
