@@ -78,6 +78,6 @@
   * TSLint orders: You can see it in the code which has incorrect typical format, move cover to your code which has incorrect typical format, you can see the orders detected this error, you can disable it in your 'tslint.json' config file.
 * [Turning your rxjs requests](http://plnkr.co/edit/UkKTiWo6MHKbAaSlAIoq?p=info)
   * Turn into upon url, you can find the 'rxjs.extensions.ts' file, you can add your required rxjs libraries in this file.
-  * This tip shows you can add your specified rxjs library(ex. import { Observable } from `'rxjs/Observable'`) in your component/service... instead of add all the rxjs libary using `rxjs/rx`(ex. import { Observable } from `'rxjs/rx'`) in order to reduce the times of request, end up improve loading performance.
+  * This tip shows you can add your specified rxjs library(ex. import { Observable } from `'rxjs/Observable'`) in your component/service... instead of add all the rxjs libary using `rxjs/rx`(ex. import { Observable } from `'rxjs/rx'`) in order to reduce the times of request, transform size, end up improve loading performance.
   * For the 'rxjs.extensions.ts' file, you need to 'import './rxjs-extensions';'in the 'app.module.ts' file
   * This extension only include all library under the 'add' file in the rxjs, you can refer to that in the 'node_modules'
