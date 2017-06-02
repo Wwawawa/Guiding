@@ -74,7 +74,7 @@
 * [refresh data from resolve service when call again](http://plnkr.co/edit/krHtnnzSZunZEZpIPZH9)
 * [Http using Querystring Parameters](http://plnkr.co/edit/UkKTiWo6MHKbAaSlAIoq)
 #### To Production
-* [TSLint]()
+* [TSLint](https://palantir.github.io/tslint/)
   * TSLint orders: You can see it in the code which has incorrect typical format, move cover to your code which has incorrect typical format, you can see the orders detected this error, you can disable it in your 'tslint.json' config file.
 * [Turning your rxjs requests](http://plnkr.co/edit/UkKTiWo6MHKbAaSlAIoq?p=info)
   * Turn into upon url, you can find the 'rxjs.extensions.ts' file, you can add your required rxjs libraries in this file.
