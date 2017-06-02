@@ -83,3 +83,10 @@
   * This extension only include all library under the 'add' file in the rxjs, you can refer to that in the 'node_modules'
 * [enable production mode](https://github.com/Wwawawa/angular2-fundamentals-Completing/blob/master/ng2-fundamentals/app/main.ts)
 * [AHEAD-OF-TIME COMPILATION](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html)
+  * AOT No-No's:
+    * form.controls.controlName
+    * control.errors?.someError
+    * Default exports
+    * Functions in providers, routes or declarations of a module
+    * Any field used in a template, including Inputs, must be public
+    * declare var for globals
