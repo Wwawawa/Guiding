@@ -81,3 +81,5 @@
   * This tip shows you can add your specified rxjs library(ex. import { Observable } from `'rxjs/Observable'`) in your component/service... instead of add all the rxjs libary using `rxjs/rx`(ex. import { Observable } from `'rxjs/rx'`) in order to reduce the times of request, transform size, end up improve loading performance.
   * For the 'rxjs.extensions.ts' file, you need to 'import './rxjs-extensions';'in the 'app.module.ts' file
   * This extension only include all library under the 'add' file in the rxjs, you can refer to that in the 'node_modules'
+* [enable production mode](https://github.com/Wwawawa/angular2-fundamentals-Completing/blob/master/ng2-fundamentals/app/main.ts)
+* [AHEAD-OF-TIME COMPILATION](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html)
