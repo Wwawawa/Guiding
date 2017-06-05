@@ -106,3 +106,9 @@
     * ngModel variables cannot be create default:ngModel variables need to create the corresponding items in the component in the aot compiler.[ex. username variable for AOT](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/app/user/login.component.ts),but in the JIT, it doesn't have to create, [ex.username variable for JIT](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/user/login.component.ts)
   * Compiling the application by calling ngc: 'node_modules/.bin/ngc -p tsconfig-aot.json'. As well you can create a script for this in your package.json file in order to you can run with something like 'npm run aot'
   * If run successfully, AOT will produce a directory named 'aot', which has all files about aot like module factories and component factories .etc, after that, we will bundle it up with Rollup.
+* Tree Shaking and Bundling with Rollup
+  * Rollup doesn't support code splitting, means lazy loaded modules don't work [splitting module for AOT](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/app/routes.ts)--[splitting module for JIT](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/route.ts)
+  * install Rollup and all relatived dependences: 'npm install rollup rollup-plugin-node-resolve rollup-plugin-commonjs rollup-plugin-uglify --save-dev'
+  * create [rollup.config.js](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/rollup.config.js)
+  * bundle with Rollup: 'node_modules/.bin/rollup -c rollup-config.js'. As well you can create a script for this in your package.json file to make it easier. after that, we produce a destination folder 'dist' you configured in rollup.config.js
+* To production now: copy index.html and build.js and any other files that are referenced by the index.html file.
