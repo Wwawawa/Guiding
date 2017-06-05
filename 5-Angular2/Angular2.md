@@ -83,10 +83,23 @@
   * This extension only include all library under the 'add' file in the rxjs, you can refer to that in the 'node_modules'
 * [enable production mode](https://github.com/Wwawawa/angular2-fundamentals-Completing/blob/master/ng2-fundamentals/app/main.ts)
 * [AHEAD-OF-TIME COMPILATION](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html)
+  ```sh
+  Ahead-of-time (AOT) vs just-in-time (JIT)
+  There is actually only one Angular compiler. The difference between AOT and JIT is a matter of timing and tooling. With AOT, the compiler runs once at build time using one set of libraries; with JIT it runs every time for every user at runtime using a different set of libraries.
+  JIT is the standard development approach shown throughout the documentation.
+  AOT doesn't have to specifically exclude your not required filed like test files .etc, AOT will walk through the code and figure out which file need to be included in our production build.
+  ```
+  * install compiler: 'npm install @angular/compiler-cli @angular/platform-server'
+  * [tsconfig-aot.json](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/tsconfig-aot.json): It's own tsconfig, compared with [JIT tsconfig.json](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/tsconfig.json).
+  * [main.ts](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/app/main-aot.ts): which is different with [JIT compiler main.ts](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/main.ts)
+  * [Index.html](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/index.html): which is different with [JIT compiler index.html](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/index.html)
   * AOT No-No's:
-    * form.controls.controlName
-    * control.errors?.someError
-    * Default exports
+    * templateUrl/styleUrl not use full path: should use relative path, [Demo For AOT](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/app/events/create-event.component.ts), compared with [Demo for JIT](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/events/create-event.component.ts), styleUrl like this ,please refer to upvote.component.ts
+    * shouldn't declare var for globals: [Toast/jQuery For AOT](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/app/app.module.ts),[Toast/jQuery For JIT](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/app.module.ts)
+    * form.controls.controlName:[Demo For AOT](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/app/events/create-event.component.html),[Demo for JIT](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/events/create-event.component.html)
+    * control.errors?.someError: [Demo for AOT](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/app/user/profile.component.html),[Demo for JIT](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/user/profile.component.html)
+    * Calling method with the right signature: [ngOnChanges for AOT](),[ngOnChanges for JIT](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/events/event-detail/session-list.component.ts)
+    * Shouldn't use default exports
     * Functions in providers, routes or declarations of a module
-    * Any field used in a template, including Inputs, must be public
-    * declare var for globals
+    * Any field used in a template, including Inputs, must be public: [Demo for AOT](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/app/nav/nav.component.ts),[Demo for JIT](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/nav/navbar.component.ts)    
+    * ngModel variables cannot be create default:ngModel variables need to create the corresponding items in the component in the aot compiler.[ex. username variable for AOT](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/app/user/login.component.ts),but in the JIT, it doesn't have to create, [ex.username variable for JIT](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/user/login.component.ts)
