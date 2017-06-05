@@ -88,6 +88,7 @@
   There is actually only one Angular compiler. The difference between AOT and JIT is a matter of timing and tooling. With AOT, the compiler runs once at build time using one set of libraries; with JIT it runs every time for every user at runtime using a different set of libraries.
   JIT is the standard development approach shown throughout the documentation.
   AOT doesn't have to specifically exclude your not required filed like test files .etc, AOT will walk through the code and figure out which file need to be included in our production build.
+  AOT only compile the code file relative app.module.ts from main.ts, cannot deal with the config files, source control files.
   ```
   * install compiler: 'npm install @angular/compiler-cli @angular/platform-server'
   * [tsconfig-aot.json](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/tsconfig-aot.json): It's own tsconfig, compared with [JIT tsconfig.json](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/tsconfig.json).
