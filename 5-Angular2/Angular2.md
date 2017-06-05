@@ -73,7 +73,7 @@
   * notice the '/' when call third-party data url
 * [refresh data from resolve service when call again](http://plnkr.co/edit/krHtnnzSZunZEZpIPZH9)
 * [Http using Querystring Parameters](http://plnkr.co/edit/UkKTiWo6MHKbAaSlAIoq)
-#### To Production
+#### To Production([Deployment](https://angular.io/docs/ts/latest/guide/deployment.html#!#sts=Optimize%20for%20production))
 * [TSLint](https://palantir.github.io/tslint/)
   * TSLint orders: You can see it in the code which has incorrect typical format, move cover to your code which has incorrect typical format, you can see the orders detected this error, you can disable it in your 'tslint.json' config file.
 * [Turning your rxjs requests](http://plnkr.co/edit/UkKTiWo6MHKbAaSlAIoq?p=info)
