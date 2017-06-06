@@ -45,5 +45,22 @@
   * create [rollup.config.js](https://github.com/Wwawawa/angular2-fundamental-exercise/blob/master/chapter17%20Production%20AOT/rollup.config.js)
   * bundle with Rollup: 'node_modules/.bin/rollup -c rollup-config.js'(windows call "node_modules/.bin/rollup"  -c rollup-config.js). As well you can create a script for this in your package.json file to make it easier. after that, we produce a destination folder 'dist' you configured in rollup.config.js
 * To production now: copy index.html and build.js and any other files that are referenced by the index.html file.
-* [Webpack](https://angular.io/docs/ts/latest/guide/webpack.html)
+* [Webpack](https://angular.io/docs/ts/latest/guide/webpack.html) and [Webpack github](https://webpack.github.io/) and [Webpack documentation](https://webpack.js.org/)
   * Webpack support code splitting, means lazy loaded modules can work.
+  * [Angular-Cli](https://angular.io/docs/ts/latest/cli-quickstart.html) often use Webpack, please refer to the [document](https://github.com/angular/angular-cli/wiki)
+  * Turn into cli project:
+     * Create a blank cli project 
+     * copy the app file code into src/app directory
+     * align the package.json file
+     * align the src/index.html
+     * align the src/polyfills.ts
+  * Cli to production just as to WebPack: call below commend line
+  ```js
+     npm run start:prod
+  ```
+  * Webpack would not download all the library in the initial, only get the specifical library which you load it, that is mean the library will not load until you render the align application.For solve this problem to add below code into app.module.ts:
+     ```js
+     import { PreloadAllModules } from '@angular/router';
+     RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules})
+     ```
+  * Cli is able to use AOT
