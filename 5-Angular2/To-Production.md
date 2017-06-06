@@ -48,17 +48,18 @@
 * [Webpack](https://angular.io/docs/ts/latest/guide/webpack.html) and [Webpack github](https://webpack.github.io/) and [Webpack documentation](https://webpack.js.org/)
   * Webpack support code splitting, means lazy loaded modules can work.
   * [Angular-Cli](https://angular.io/docs/ts/latest/cli-quickstart.html) often use Webpack, please refer to the [document](https://github.com/angular/angular-cli/wiki)
-  * Turn into cli project:
+  * Turn into cli project: below refer to [ng-fundamentals-cli](https://github.com/Wwawawa/ng2-fundamentals-cli)
      * Create a blank cli project 
      * copy the app file code into src/app directory
      * align the package.json file
      * align the src/index.html
      * align the src/polyfills.ts
+     * align the proxy.conf.json
   * Cli to production just as to WebPack: call below commend line
   ```js
      npm run start:prod
   ```
-  * Webpack would not download all the library in the initial, only get the specifical library which you load it, that is mean the library will not load until you render the align application.For solve this problem to add below code into app.module.ts:
+  * Webpack would not download all the library in the initial, only get the specifical library which you load it, that is mean the library will not load until you render the align application.For solve this problem to add below code into app.module.ts: [demo](https://github.com/Wwawawa/ng2-fundamentals-cli/blob/master/src/app/app.module.ts)
      ```js
      import { PreloadAllModules } from '@angular/router';
      RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules})
