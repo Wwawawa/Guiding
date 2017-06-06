@@ -5,6 +5,10 @@
   ```js
    tslint "app/**/*.ts"
   ```
+  * fix all incorrect format:
+  ```js
+   tslint "app/**/*.ts" --fix
+  ```
 * [Turning your rxjs requests](http://plnkr.co/edit/UkKTiWo6MHKbAaSlAIoq?p=info)
   * Turn into upon url, you can find the 'rxjs.extensions.ts' file, you can add your required rxjs libraries in this file.
   * This tip shows you can add your specified rxjs library(ex. import { Observable } from `'rxjs/Observable'`) in your component/service... instead of add all the rxjs libary using `rxjs/rx`(ex. import { Observable } from `'rxjs/rx'`) in order to reduce the times of request, transform size, end up improve loading performance.
