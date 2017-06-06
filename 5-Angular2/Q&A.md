@@ -21,3 +21,4 @@
         return this.eventService.getEvent(router.params['id']);
     }
 ```
+#### 6-- OpaqueToken has been replaced by InjectionToken, see [angular/angular@d169c24](https://github.com/angular/angular/commit/d169c2434e3b5cd5991e38ffd8904e0919f11788)
