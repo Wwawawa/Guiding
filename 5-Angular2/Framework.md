@@ -2,7 +2,11 @@
 1. tsconfig.json: compile ts into js configuration
 2. [systemjs.config.js](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/systemjs.config.js): package path configuration
 3. styles.css: global css file
-4. package.json: dependence package configuration
+4. [package.json](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/package.json): dependence package configuration
+   * "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" ",
+      * tsc: compile the ts into js
+      * npm run tsc:w: watch the change of ts, if changing, compile into js
+      * npm run server: run server
 5. [index.html](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/index.html): page entry html(included package reference)
    * Load the main.ts
      * Loading from systemjs.config.js  
