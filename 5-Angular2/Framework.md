@@ -29,13 +29,13 @@
          </script>
       ``` 
     * The component templateUrl path is relative to the root of the application, the root of application is wherever the index.html is
-    * [<base href>](https://angular.io/guide/router)
-      * Add a <base> element to the index.html as the first child in the <head> tag
+    * [\<base href\> for router](https://angular.io/guide/router)      
+      * Add a \<base\> element to the index.html as the first child in the \<head\> tag for router
       * To tell angular where our app is hosted
-      * For this demo, our app is hosted at the root of our web server, so like this:
-      ```html
-        <base href="/">
+      * For this demo, our app is hosted at the root of our web server, so like this: 
       ```
+        <base href="/">
+      ```      
 6. [main.ts](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/main.ts): bootstrap module
 7. [app.module.ts](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/app.module.ts): module file. which is used to register component, service, router.etc, in other words, all blocks are registered in a module(of caurse can have muiltiple module), as-is this file. it is bootstraped by main.ts
 8. [app.component.ts](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/events/events-app.component.ts): which can be renamed any name, this is top componnet which is all component entry and router bootstrap by '<router-outlet></router-outlet>', it will be added into bootstrap node of app.module.ts(ex. [bootstrap: [EventsAppComponent]](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/app.module.ts))
