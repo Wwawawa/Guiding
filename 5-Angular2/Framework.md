@@ -1,6 +1,6 @@
 ### Structure(ex. [ng2-fundamentals](https://github.com/Wwawawa/angular2-fundamentals-JIT/tree/master/ng2-fundamentals))
 1. tsconfig.json: compile ts into js configuration
-2. [systemjs.config.js]((https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/systemjs.config.js)): package path configuration
+2. [systemjs.config.js](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/systemjs.config.js): package path configuration
 3. styles.css: global css file
 4. package.json: dependence package configuration
 5. [index.html](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/index.html): page entry html(included package reference)
