@@ -4,26 +4,26 @@
 3. styles.css: global css file
 4. package.json: dependence package configuration
 5. [index.html](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/index.html): page entry html(included package reference)
-* Load the main.ts
-  * Loading from systemjs.config.js  
-     ```js
-           <script>        
-             System.import('app').catch(function(err){console.error(err); });       
-           </script>
-           // for this, we must add the config into [systemjs.config.js](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/systemjs.config.js):
-             packages: {
-                 app: {
-                   main: './main.js',
-                   defaultExtension: 'js'
-                 },
-                 ....
-     ```
-   * Loading directly
-   ```js
-      <script>
-         System.import('main.js').catch(function(err){ console.error(err); });//notice the main.js path
-      </script>
-   ```
+   * Load the main.ts
+     * Loading from systemjs.config.js  
+        ```js
+              <script>        
+                System.import('app').catch(function(err){console.error(err); });       
+              </script>
+              // for this, we must add the config into [systemjs.config.js](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/systemjs.config.js):
+                packages: {
+                    app: {
+                      main: './main.js',
+                      defaultExtension: 'js'
+                    },
+                    ....
+        ```
+      * Loading directly
+      ```js
+         <script>
+            System.import('main.js').catch(function(err){ console.error(err); });//notice the main.js path
+         </script>
+      ```
 6. [main.ts](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/main.ts): bootstrap module
 7. [app.module.ts](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/app.module.ts): module file. which is used to register component, service, router.etc, in other words, all blocks are registered in a module(of caurse can have muiltiple module), as-is this file. it is bootstraped by main.ts
 8. [app.component.ts](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/events/events-app.component.ts): which can be renamed any name, this is top componnet which is all component entry and router bootstrap by '<router-outlet></router-outlet>', it will be added into bootstrap node of app.module.ts(ex. [bootstrap: [EventsAppComponent]](https://github.com/Wwawawa/angular2-fundamentals-JIT/blob/master/ng2-fundamentals/app/app.module.ts))
