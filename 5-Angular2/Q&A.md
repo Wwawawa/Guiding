@@ -22,3 +22,10 @@
     }
 ```
 #### 6-- OpaqueToken has been replaced by InjectionToken, see [angular/angular@d169c24](https://github.com/angular/angular/commit/d169c2434e3b5cd5991e38ffd8904e0919f11788)
+#### 7-- For vs code editor, remove all .js files and .js.map files in order to clean the directory, we can add below configuration into vsCode setting(file->Preferences->settings:USER SETTINGS section right the view window):
+```json
+    "files.exclude": {
+        "app/**/*.js":true,
+        "app/**/*.map":true
+    }
+```
