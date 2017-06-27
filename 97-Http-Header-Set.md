@@ -28,8 +28,7 @@
         this.Response.Cache.AppendCacheExtension("no-store");
     }
 ```
-* Other
-  * Introduction
+* Introduction
 >>>The correct minimum set of headers that works across all mentioned clients (and proxies):
 ```th
         Cache-Control: no-cache, no-store, must-revalidate
@@ -63,14 +62,14 @@
 
 >>>Other **Cache-Control** parameters such as **max-age** are irrelevant if the abovementioned **Cache-Control** parameters are specified. The [Last-Modified](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.29) header as included in most other answers here is only interesting if you **actually want** to cache the request, so you don't need to specify it at all.
 
-  * How to set it?
-  >>>Using PHP:
+* How to set it?
+>>>Using PHP:
   ```php
           header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
           header("Pragma: no-cache"); // HTTP 1.0.
           header("Expires: 0"); // Proxies.
   ```
-  >>>Using Java Servlet, or Node.js:
+>>>Using Java Servlet, or Node.js:
 ```js
           response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
           response.setHeader("Pragma", "no-cache"); // HTTP 1.0.
@@ -134,4 +133,11 @@
               )
           )
 ```
+* HTML meta tags vs HTTP response headers
+>Important to know is that when a HTML page is served over a HTTP connection, and a header is present in both the HTTP response headers and the HTML **meta http-equiv>** tags, then the one specified in the HTTP response header will get precedence over the HTML meta tag. The HTML meta tag will only be used when the page is viewed from local disk file system via a **file://** URL. See also [W3 HTML spec chapter 5.2.2.](http://www.w3.org/TR/html4/charset.html#h-5.2.2) Take care with this when you don't specify them programmatically, because the webserver can namely include some default values.
 
+>Generally, you'd better just not specify the HTML meta tags to avoid confusion by starters, and rely on hard HTTP response headers. Moreover, specifically those **meta http-equiv>** tags are [invalid](http://validator.w3.org/) in HTML5. Only the **http-equiv** values listed in [HTML5 specification](http://dev.w3.org/html5/spec-preview/the-meta-element.html#attr-meta-http-equiv) are allowed.
+* Verifying the actual HTTP response headers
+>To verify the one and other, you can see/debug them in HTTP traffic monitor of webbrowser's developer toolset. You can get there by pressing F12 in Chrome/Firefox23+/IE9+, and then opening the "Network" or "Net" tab panel, and then clicking the HTTP request of interest to uncover all detail about the HTTP request and response.The [screenshot](https://i.stack.imgur.com/fSnXH.png) is from Chrome
+* I want to set those headers on file downloads too
+>First of all, this question and answer is targeted on "web pages" (HTML pages), not "file downloads" (PDF, zip, Excel, etc). You'd better have them cached and make use of some file version identifier somewhere in URI path or querystring to force a redownload on a changed file. When applying those no-cache headers on file downloads anyway, then beware of the IE7/8 bug when serving a file download over HTTPS instead of HTTP. For detail, see [IE cannot download foo.jsf. IE was not able to open this internet site. The requested site is either unavailable or cannot be found](https://stackoverflow.com/q/5034454).
