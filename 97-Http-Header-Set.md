@@ -25,8 +25,11 @@
 ```cs
     protected void Application_BeginRequest(object sender, EventArgs e)
     {
+        // set no-store to cache-control
         this.Response.Cache.AppendCacheExtension("no-store");
-    }
+        //avoid Iframe attacking
+        this.Response.Headers["X-FRAME-OPTIONS"] = "SAMEORIGIN";
+    }    
 ```
 * Introduction
 >>>The correct minimum set of headers that works across all mentioned clients (and proxies):
