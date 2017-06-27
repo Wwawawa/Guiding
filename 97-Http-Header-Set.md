@@ -21,3 +21,10 @@
   ....
 
 ```
+* Set Headers in the global.asax
+```cs
+    protected void Application_BeginRequest(object sender, EventArgs e)
+    {
+        this.Response.Cache.AppendCacheExtension("no-store");
+    }
+```
