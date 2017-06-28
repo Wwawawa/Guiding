@@ -67,4 +67,23 @@ Console.WriteLine(a.Item2);//Item1 代表第一个，Item2代表第二个
 列如：Tuple<string, int, int, int, int, int, int, Tuple<int, int, int>>  红色部分是第8个。
 第8个元素使用方法：对象.Rest.Item1，对象.Rest.Item2
 ```
+#### [IEnumerable<T> Extension](https://github.com/Wwawawa/iac-aspnet/tree/master/6-WS-Federation/EmbeddedSTS/ChangeEmbeddedSTSForAddOutputCliamsDynamically)
+* we can add extension methods for the IEnumerable<T>, as below approach:
+```cs
+    //can add extention methods for variable which is declared by IEnumerable<string> as below
+    public void IEnumerableTest(IEnumerable<string> testp)
+    {
+        var test1 = testp.test();
+    }
+        
+        ......
+    internal static class myExtensions
+    {
+        public static string test(this IEnumerable<string> a)
+        {
+            return "";
+        }
+    }
+```
+
 
