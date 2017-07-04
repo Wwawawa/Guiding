@@ -49,6 +49,7 @@ and replace it with the part below
     </VisualStudio>
   </SupportedProducts>
 ```
+* change the >SupportedFrameworkRuntimeEdition MinVersion="4.5" MaxVersion="4.5" /> to >SupportedFrameworkRuntimeEdition MinVersion="4.5" MaxVersion="4.6" />
 * save the file and exit
 * compress folder as a ZIP file again
 * rename the extension to VSIX
