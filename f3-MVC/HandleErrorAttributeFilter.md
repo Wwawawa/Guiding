@@ -7,7 +7,8 @@
 * [HandleErrorAttribute Introduction](http://shiyousan.com/post/635838881238204198)
     * [IExceptionFilter for CustomExceptionAttribute](http://shiyousan.com/post/635833789557065314)
     * [FilterConfig](http://shiyousan.com/post/635835285087587126)
-* How to handle HTTP 404,401 .etc error:
+* How to handle HTTP 404,403 .etc error:
+  * not include 401,the HandleErrorAttribute cannot handle this error, but it often cause logon page showing
   * Since HandleErrorAttribute filter can only handle 500 error, so we need to custom error view for other errors except 500.
   * Demo [Video](https://www.youtube.com/watch?v=nNEjXCSnw6w) and [Slide](http://csharp-video-tutorials.blogspot.com.ar/2013/08/part-72-handleerror-attribute-in-mvc.html)
   * Step to deployment:
