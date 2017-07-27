@@ -12,7 +12,7 @@
     * [socket.io](https://github.com/socketio/socket.io): Realtime application framework (Node.JS server) http://socket.io
     * [socket.io-redis](https://github.com/socketio/socket.io-redis): Adapter to enable broadcasting of events to multiple separate socket.io server nodes.
 * [Dependency Injection Introduction](http://blog.csdn.net/CommandBaby/article/details/51578699)
-* [HandleErrorAttribute Introduction](http://www.cnblogs.com/lenther2002/p/5378865.html)
+* [HandleErrorAttribute Introduction](http://shiyousan.com/post/635838881238204198)
     * [IExceptionFilter for CustomExceptionAttribute](http://shiyousan.com/post/635833789557065314)
     * [FilterConfig](http://shiyousan.com/post/635835285087587126)
 
