@@ -9,6 +9,26 @@
     * [FilterConfig](http://shiyousan.com/post/635835285087587126)
 * How to handle HTTP 404,403 .etc error:
   * not include 401,the HandleErrorAttribute cannot handle this error, but it often cause logon page showing
+    * solution 1: custom HandlerrorAttribute to handle this error.
+    * solution 2: custom authorizeAttribute to can explose this error:
+    ```cs
+        public class BetterAuthorizeAttribute : AuthorizeAttribute
+        {
+          protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
+          {
+            throw new NotAuthorizedHttpException(Roles);
+          }
+        }
+
+        public class NotAuthorizedHttpException : HttpException
+        {
+          public NotAuthorizedHttpException(string missingRoles)
+            : base(401, string.Format("You do not have the required role(s) '{0}'.", string.Join(", ", missingRoles)))
+          {
+          }
+        }
+    ```
+    
   * Since HandleErrorAttribute filter can only handle 500 error, so we need to custom error view for other errors except 500.
   * Demo [Video](https://www.youtube.com/watch?v=nNEjXCSnw6w) and [Slide](http://csharp-video-tutorials.blogspot.com.ar/2013/08/part-72-handleerror-attribute-in-mvc.html)
   * Step to deployment:
