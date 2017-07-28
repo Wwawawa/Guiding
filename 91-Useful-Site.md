@@ -11,7 +11,9 @@
     * [socketio](https://github.com/socketio)
     * [socket.io](https://github.com/socketio/socket.io): Realtime application framework (Node.JS server) http://socket.io
     * [socket.io-redis](https://github.com/socketio/socket.io-redis): Adapter to enable broadcasting of events to multiple separate socket.io server nodes.
-* [Dependency Injection Introduction](http://blog.csdn.net/CommandBaby/article/details/51578699)
+* Code Design pattern
+    * [Dependency Injection Introduction](http://blog.csdn.net/CommandBaby/article/details/51578699)
+    * [OCP(Open Closed Principle)](http://www.cnblogs.com/landeanfen/p/5272144.html)
 
 
 
