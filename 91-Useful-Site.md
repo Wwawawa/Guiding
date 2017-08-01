@@ -16,6 +16,7 @@
         * [Unity](http://blog.csdn.net/luyuncsd123/article/details/18950673)
         * Autofac -- Dependence injection which you can resolve the relationship between all dependence in a container file, uncoupling every dependence libraries.(Nuget: Autofac)refer to [WPFandMVVM_TestDrivenDevelopment](https://github.com/Wwawawa/WPFandMVVM_TestDrivenDevelopment_SelfBuilding)
     * [OCP(Open Closed Principle)](http://www.cnblogs.com/landeanfen/p/5272144.html)
+* [Entity Framework Code First Migrations](https://msdn.microsoft.com/en-us/data/jj591621)
 
 
 
