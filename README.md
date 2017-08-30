@@ -28,3 +28,6 @@
     * Using [WebClient](http://www.cnblogs.com/hfliyi/archive/2012/08/21/2649892.html) to get resource from special path
     * Using [NetworkCredential](http://www.cnblogs.com/Hawk-Hong/p/4293651.html) to transform the authentication
     * [ignore the SSL authentication](http://www.cnblogs.com/duanh/p/5781839.html)
+* Active Directory
+    * [Understanding Active Directory Naming Formats](http://blog.schertz.name/2012/08/understanding-active-directory-naming-formats/)
+    * [Active Directory Introduction](http://terryli.blog.51cto.com/704315/141686)
