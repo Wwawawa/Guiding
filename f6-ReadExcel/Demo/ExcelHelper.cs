@@ -12,25 +12,46 @@ namespace ReadExcel
 {
     public class ExcelHelper
     {
-
-        public static XSSFWorkbook GetExcelFile(string filePath)
+        public static object GetExcelFile(string filePath, string extension)
         {
-            XSSFWorkbook wk = null;
+            object wk = null;
             try
             {                
                 using (FileStream fs = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 {
-                    wk = new XSSFWorkbook(fs);
+                    if (extension == ".xlsx")
+                    {
+                        wk = new XSSFWorkbook(fs);
+                    }
+                    else
+                    {
+                        wk = new HSSFWorkbook(fs);
+                    }                    
                     fs.Close();
                 }
                 return wk;
+                
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            
+        }
+        public static ISheet GetExcelSheet(XSSFWorkbook wk, string sheetname)
+        {
+            try
+            {
+                ISheet sheet = wk.GetSheet(sheetname);              
+                return sheet;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-        public static ISheet GetExcelSheet(XSSFWorkbook wk, string sheetname)
+        public static ISheet GetExcelSheet(HSSFWorkbook wk, string sheetname)
         {
             try
             {
