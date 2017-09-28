@@ -19,13 +19,13 @@ namespace ReadExcel
             {                
                 using (FileStream fs = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 {
-                    if (extension == ".xlsx")
-                    {
-                        wk = new XSSFWorkbook(fs);
-                    }
-                    else
+                    if (extension == ".xls")
                     {
                         wk = new HSSFWorkbook(fs);
+                    }
+                    else
+                    {                        
+                        wk = new XSSFWorkbook(fs);
                     }                    
                     fs.Close();
                 }
