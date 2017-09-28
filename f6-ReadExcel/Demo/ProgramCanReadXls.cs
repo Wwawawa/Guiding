@@ -57,13 +57,13 @@ namespace ReadExcel
                 HSSFWorkbook wxls = null;
 
                 string extension = Path.GetExtension(fileName);
-                if (extension == ".xlsx")
-                {
-                    wxlsx = (XSSFWorkbook)ExcelHelper.GetExcelFile(fileName, extension);
+                if (extension == ".xls")
+                {                    
+                    wxls = (HSSFWorkbook)ExcelHelper.GetExcelFile(fileName, extension);
                 }
                 else
                 {
-                    wxls = (HSSFWorkbook)ExcelHelper.GetExcelFile(fileName, extension);
+                    wxlsx = (XSSFWorkbook)ExcelHelper.GetExcelFile(fileName, extension);
                 }
                 if (wxlsx != null || wxls!=null)
                 {
