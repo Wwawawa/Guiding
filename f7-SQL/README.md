@@ -1,5 +1,6 @@
 #### [Access Remote Server DB](https://msdn.microsoft.com/zh-cn/library/ms188313(v=sql.90).aspx)
-  * [Options Details](https://msdn.microsoft.com/zh-cn/library/ms189811(v=sql.90).aspx)
+  * [Linked Server](https://docs.microsoft.com/zh-cn/sql/relational-databases/linked-servers/create-linked-servers-sql-server-database-engine)
+  * [sp_addlinkedserver and sp_addlinkedsrvlogin](https://msdn.microsoft.com/zh-cn/library/ms189811(v=sql.90).aspx)
     * Create Connection(only windows identity, details refer to [here](https://msdn.microsoft.com/zh-cn/library/ms189811(v=sql.90).aspx))
     ```sql
       EXEC sp_addlinkedserver   
