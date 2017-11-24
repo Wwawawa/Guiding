@@ -19,7 +19,7 @@
       Exec sp_droplinkedsrvlogin DBVIP,Null
       Exec sp_dropserver DBVIP  
     ```    
-  * [Set Advanced Options](https://msdn.microsoft.com/zh-cn/library/ms189631(v=sql.90).aspx)
+  * [Ad hoc distributed queries option](https://msdn.microsoft.com/zh-cn/library/ms187569(v=sql.90).aspx)(refer to [Set Advanced Options](https://msdn.microsoft.com/zh-cn/library/ms189631(v=sql.90).aspx))
     * Set Options  
       ```sql
       EXEC sp_configure 'show advanced options', 1; 
