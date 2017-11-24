@@ -1,6 +1,13 @@
 #### [Access Remote Server DB](https://msdn.microsoft.com/zh-cn/library/ms188313(v=sql.90).aspx)
   * [Options Details](https://msdn.microsoft.com/zh-cn/library/ms189811(v=sql.90).aspx)
-    * Create Connection   
+    * Create Connection
+    ```sql
+      EXEC sp_addlinkedserver   
+      @server='DBVIP', 
+      @srvproduct='',
+      @provider='SQLNCLI'
+      @datasrc='serversrc'
+    ```
     * Exec Query 
     ```sql
       SELECT count(1) FROM DBVIP.[dababaseName].[dbo].[tableName]
