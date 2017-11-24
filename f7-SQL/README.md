@@ -27,7 +27,7 @@
       ```
     * Exec Query
     ```sql
-      select * from openrowset('SQLOLEDB', 'Server=serverName;Trusted_Connection=yes','SELECT count(1) FROM tableName') 
+      select * from openrowset('SQLOLEDB', 'Server=serverName;Trusted_Connection=yes','SELECT count(1) FROM [dababaseName].[dbo].[tableName]') 
     ```
     * Remove Options
       ```sql
