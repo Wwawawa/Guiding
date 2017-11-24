@@ -6,7 +6,7 @@
       @server='DBVIP', 
       @srvproduct='',
       @provider='SQLNCLI', 
-      @datasrc='vrtvd25424.ds.dev.accenture.com'
+      @datasrc='serverUri'
     ```
     * Exec Query 
     ```sql
