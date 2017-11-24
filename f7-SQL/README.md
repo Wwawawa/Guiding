@@ -8,6 +8,10 @@
       @provider='SQLNCLI', 
       @datasrc='vrtvd25424.ds.dev.accenture.com'
     ```
+    * Exec Query 
+    ```sql
+      SELECT count(1) FROM DBVIP.[dababaseName].[dbo].[tableName]
+    ```
     * Close Connetion
     ```sql
       Exec sp_droplinkedsrvlogin DBVIP,Null
