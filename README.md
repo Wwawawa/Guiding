@@ -31,3 +31,11 @@
 * Active Directory
     * [Understanding Active Directory Naming Formats](http://blog.schertz.name/2012/08/understanding-active-directory-naming-formats/)
     * [Active Directory Introduction](http://terryli.blog.51cto.com/704315/141686)
+* Process Bar
+    * [UI Bootstrap V0.13.0](http://angular-ui.github.io/bootstrap/versioned-docs/0.13.0/)
+        ```th
+         using <progressbar></progressbar> in this version
+         using <uib-progressbar></uib-progressbar> in new version
+        ```
+    * [UI Bootstrap Code](https://github.com/Wwawawa/bootstrap)    
+    * [Round Process Bar Code](https://github.com/Wwawawa/angular-svg-round-progressbar)
