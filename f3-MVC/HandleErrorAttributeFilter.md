@@ -1,4 +1,5 @@
 #### HandleErrorAttribute: we actually only deploy below code in web.config, not have to set "defaultRedirect" property if you don't need to custom specially, because it will default redirect the page located in "/Views/Shared/Error.cshtml".
+#### If exception occur in a try catch, the exception filter will not be invoke, because the exception has been catch.
 ```xml
   <customErrors mode="On">
   </customErrors>
