@@ -1,71 +1,27 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css">    
   </head>
-
   <body>
-    <div style="color:red">Some <em>rich</em> <span style="font-size:2em">HTML</span></div>
-    <div contenteditable></div>
-	<script>
-	
-	var editable = document.querySelector("div[contenteditable]");
+    	<div style="color:red">Some <em>rich</em> <span style="font-size:2em">HTML</span></div>
+    	<div contenteditable></div>
+	<script>	
+		var editable = document.querySelector("div[contenteditable]");
 		editable.addEventListener('paste', function(e){
-			e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-			
-			var pastedText = "";
-			if (window.clipboardData && window.clipboardData.getData) { // IE
-				pastedText = window.clipboardData.getData('Text');
-				IE(pastedText);
+			e.preventDefault();
+			var text = "";
+			if (e.clipboardData) {
+				text = e.clipboardData.getData('text/plain');
+				document.execCommand("insertHTML", false, text);
+			 } else {
+				// To support browsers without clipboard API (IE and older browsers)
+				text = window.clipboardData.getData('Text');
+				if (window.getSelection) {
+				window.getSelection().getRangeAt(0).insertNode(document.createTextNode(text));
 			} 
-			else if (e.clipboardData && e.clipboardData.getData) {
-				pastedText = e.clipboardData.getData('text/plain');
-				//document.execCommand("insertHTML", false, pastedText);
-				IE(pastedText);
-			}
-			else{
-				alert('Not paste object!');
-			}
-			
-		});
-		function IE(html)
-		{
-			var sel, range;
-			if (window.getSelection) {
-				// IE9 and non-IE
-				sel = window.getSelection();
-				if (sel.getRangeAt && sel.rangeCount) {
-					range = sel.getRangeAt(0);
-					range.deleteContents();
-
-					// Range.createContextualFragment() would be useful here but is
-					// only relatively recently standardized and is not supported in
-					// some browsers (IE9, for one)
-					var el = document.createElement("mainedit");
-					el.innerHTML = html;
-					var frag = document.createDocumentFragment(), node, lastNode;
-					while ( (node = el.firstChild) ) {
-						lastNode = frag.appendChild(node);
-					}
-					range.insertNode(frag);
-
-					// Preserve the selection
-					if (lastNode) {
-						range = range.cloneRange();
-						range.setStartAfter(lastNode);
-						range.collapse(true);
-						sel.removeAllRanges();
-						sel.addRange(range);
-					}
-				}
-			} else if (document.selection && document.selection.type != "Control") {
-				// IE < 9
-				document.selection.createRange().pasteHTML(html);
-			}
-		}
+		    }
+		});		
 	</script>
   </body>
-
 </html>
