@@ -3,6 +3,12 @@
   jsonp
   CORS
 ```
+  * Cross origin requests are only supported for HTTP but it's not cross-domain
+    * you are loading the model using either file:// or C:/, which stays true to the error message as they are not http://. So you can either install a webserver in your local PC or upload the model somewhere else and use jsonp and change the url to http://example.com/path/to/model.
+    * on windows edit the properties of the chrome shortcut and add the switch to the end of the "target" path, e.g.
+    ```sh    
+      C:\ ... \Application\chrome.exe --allow-file-access-from-files
+    ```
 #### Authentication inherit
 ```sh
   <location path="." inheritInChildApplications="true">
