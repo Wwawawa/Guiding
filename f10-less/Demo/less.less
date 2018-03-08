@@ -1,0 +1,106 @@
+@import 'ImportedLess.less';
+//global variables can be called in any css class
+@base: #f938ab;
+@nice-blue: #f938ab;
+@light-blue: @nice-blue + #333;
+@switch: light;
+
+//function with properties "@radius" like function in C# can be call in any css class
+.rounded-corners (@radius: 15px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+//below is a function, when call .mixin with "light" property, .mixin (light, @color) and .mixin (@_, @color) will be called
+.mixin (dark, @color) {
+  background-color: darken(@color, 10%);
+}
+.mixin (light, @color) {
+  background-color: lighten(@color, 30%);
+}
+.mixin (@_, @color) {
+  display: block;
+}
+//consideration judge
+.mixin2 (@a) when (lightness(@a) >= 50%) {
+  background-color: black;
+}
+.mixin2 (@a) when (lightness(@a) < 50%) {
+  background-color: white;
+}
+.mixin2 (@a) {
+  color: @a;
+}
+//@media
+.divcolor {
+  @media (max-width: 400px) {
+    background-color: green;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    background-color: red;
+  }
+  @media (min-width: 800px) {
+    background-color: #f938ab;
+  }
+}
+//can embeded like upon
+//.divcolor {
+//@media (max-width: 800px) {
+// background-color: green;
+//     .class1;
+//     @media (min-width: 400px){
+//        background-color: red;
+//        .class2
+//     }
+//  }
+//}
+
+//demo
+#div1 {
+    padding:20px;
+    width:200px;
+    height:100px;
+    border:2px solid red;
+  .rounded-corners;
+  .mixin2(#ddd)
+}
+#div2 {
+    padding:20px;
+    width:200px;
+    height:100px;
+    border:2px solid green;
+  .rounded-corners(30px);
+  .mixin2(#555)
+}
+.class {
+  .mixin(@switch, @base);
+}
+
+//demo
+//div{
+   //background-color:@light-blue;
+//   .mixin(@switch, @base);   
+//   padding:50px;
+//}
+div
+{
+	background-color:@aaa;
+	padding:50px;
+}
+//embeded in less demo
+#div1 {
+    h1 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    span {
+        font-size: 12px;
+        a {
+            text-decoration: none;
+            &:hover {
+				border:2px solid red;
+            }
+        }
+    }
+}
+
