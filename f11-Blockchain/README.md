@@ -2,3 +2,4 @@
   * [Ethfans](https://ethfans.org/)
   * [Ethereum-Github](https://github.com/ethereum)
   * [Ethereum-web3.js-Github](https://github.com/ethereum/web3.js)
+  * [how-can-we-integrate-ipfs-with-ethereum-in-dapps](https://ethereum.stackexchange.com/questions/7664/how-can-we-integrate-ipfs-with-ethereum-in-dapps)
