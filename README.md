@@ -43,3 +43,9 @@
     * Postman
 * Process Drawing
     * [processon](https://www.processon.com/)
+* How to spead to mirror from npm/docker:
+    * [Docker_CN](https://www.docker-cn.com/registry-mirror)
+    * npm: using Alibaba mirror china server
+    ```sh
+    npm config set registry http://registry.npm.taobao.org
+    ```
