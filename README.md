@@ -47,5 +47,8 @@
     * [Docker_CN](https://www.docker-cn.com/registry-mirror)
     * npm: Specify the mirror address from Alibaba mirror china server
     ```sh
-        npm config set registry http://registry.npm.taobao.org
+        set for all mirror:
+            npm config set registry http://registry.npm.taobao.org
+        set for a specify mirror, .ex:
+            npm install -gd express --registry=http://registry.npm.taobao.org
     ```
