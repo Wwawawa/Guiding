@@ -52,3 +52,5 @@
         set for a specify mirror, .ex:
             npm install -gd express --registry=http://registry.npm.taobao.org
     ```
+    
+    * [truffle boxes](http://truffleframework.com/boxes/)
